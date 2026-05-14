@@ -14,6 +14,10 @@ function App() {
   const isEveryTeenager = people.every(person => person.age >= 10 && person.age <= 20);
   const isAnyTeenager = people.some(person => person.age >= 10 && person.age <= 20);
 
+  const array = [1, 2, 3, 4];
+  const sum = array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+  const product = array.reduce((accumulator, currentValue) => accumulator * currentValue, 1);
+
   return (
     <div className="container">
       <div className="results-card">
@@ -41,6 +45,15 @@ function App() {
         <div className="result-section">
           <h3>4. Is any person a teenager?</h3>
           <p>{isAnyTeenager ? "True" : "False"}</p>
+        </div>
+
+        <hr style={{ margin: "20px 0", border: "1px solid #eee" }} />
+
+        <h2>Reduce Method Results</h2>
+        <div className="result-section">
+          <h3>Array: [1, 2, 3, 4]</h3>
+          <p><strong>Sum:</strong> {sum}</p>
+          <p><strong>Product:</strong> {product}</p>
         </div>
       </div>
     </div>
