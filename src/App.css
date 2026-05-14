@@ -5,26 +5,20 @@ body {
 }
 
 .container {
-  padding: 50px;
-}
-
-.navbar {
-  background-color: #555555;
   display: flex;
+  justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
-.nav-item {
-  color: white;
-  text-decoration: none;
-  padding: 15px 25px;
-  font-size: 16px;
+.jsx-box {
+  background-color: white;
+  padding: 40px 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.nav-item.active {
-  background-color: #3bb371; /* Green */
-}
-
-.nav-item.login {
-  background-color: black;
+.jsx-text {
+  color: blue;
+  font-size: 4rem;
+  font-weight: bold;
 }
