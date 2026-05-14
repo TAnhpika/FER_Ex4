@@ -5,51 +5,26 @@ body {
 }
 
 .container {
+  padding: 50px;
+}
+
+.navbar {
+  background-color: #555555;
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
 }
 
-.card {
-  background-color: white;
-  padding: 40px 30px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 400px;
-}
-
-.react-logo {
-  width: 250px;
-  height: 250px;
-  margin-bottom: 20px;
-}
-
-.divider {
-  border: none;
-  border-top: 2px solid #2b7a90;
-  margin: 0 10px 20px;
-}
-
-.title {
-  font-family: 'Brush Script MT', cursive, sans-serif;
-  color: #2b7a90;
-  font-size: 28px;
-  margin: 0 0 10px;
-  font-weight: normal;
-}
-
-.subtitle {
-  color: #a0a0a0;
-  font-style: italic;
-  font-family: 'Brush Script MT', cursive, sans-serif;
+.nav-item {
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
   font-size: 16px;
-  margin: 0 0 40px;
 }
 
-.description {
-  color: #333;
-  font-size: 16px;
-  margin: 0;
+.nav-item.active {
+  background-color: #3bb371; /* Green */
+}
+
+.nav-item.login {
+  background-color: black;
 }
